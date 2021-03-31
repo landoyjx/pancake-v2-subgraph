@@ -34,8 +34,6 @@ export function getEthPriceInUSD(): BigDecimal {
   // } else if (busdPair !== null) {
   //   return busdPair.token1Price
   // } else if (usdtPair !== null) {
-    console.dir(usdtPair);
-    console.dir(usdtPair.token0Price);
     return usdtPair.token0Price
   // } else {
     // return ZERO_BD
