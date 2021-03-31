@@ -10,7 +10,7 @@ const USDT_WBNB_PAIR = "0x5002df6038d3beca87abffc236bc4342b1b8a483" // created b
 
 export function getEthPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
-  let usdtPair = Pair.load(USDT_WBNB_PAIR) // usdt is token0
+  // let usdtPair = Pair.load(USDT_WBNB_PAIR) // usdt is token0
   // let busdPair = Pair.load(BUSD_WBNB_PAIR) // busd is token1
   // let daiPair = Pair.load(DAI_WBNB_PAIR)   // dai is token0
 
@@ -34,9 +34,9 @@ export function getEthPriceInUSD(): BigDecimal {
   // } else if (busdPair !== null) {
   //   return busdPair.token1Price
   // } else if (usdtPair !== null) {
-    return usdtPair.token0Price
+    // return usdtPair.token0Price
   // } else {
-  //   return ZERO_BD
+    return ZERO_BD
   // }
 }
 
